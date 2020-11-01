@@ -57,5 +57,41 @@ public class Arrays
 		{
 			System.out.println(x);
 		}
+                //Increasing the size of an array
+		System.out.println("The size of array "+arr.length);
+		int brr[]=new int[arr.length*2];
+		int i=0;
+		//Copying the values from one array to another
+		for(int x:arr)
+		{
+			brr[i++]=x;	
+		}
+		arr=brr;
+		//initializing the values in extended array
+		System.out.println("Enter the reamining values ");
+		for(int j=arr.length/2;j<arr.length;j++)
+		{
+			arr[j]=s.nextInt();
+		}
+		System.out.println("The size of array "+arr.length);
+		//Accessing all the values of an array using for each loop before reverse copying
+		System.out.println("Before revere copying the array");
+				for(int x:arr)
+				{
+					System.out.println(x+" ");
+				}
+		//Reverse copying the values in an array to another
+				int crr[]=new int[arr.length];
+				for(int k=arr.length-1,j=0;k>=0;k--,j++)
+				{
+					crr[j]=arr[k];
+				}
+				arr=crr;
+				System.out.println("After revere copying the array and assigning back to same array");;
+				for(int x:arr)
+				{
+					System.out.println(x);
+				}
+
 	}
 }
