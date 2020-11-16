@@ -25,9 +25,4 @@ public class SuperThis
 		sub c=new sub(15,25);
         }
 }
-//output:
-//calling current class member(object) using this keyword 10
-//formal argument value 15
-//We use super keyword to execute the parameterized constructor of parent class
-//calling current class member(object) using this keyword 20
-//formal argument value 25
+
